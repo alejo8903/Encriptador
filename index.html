@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <h1><img src="Imagenes/Vector.png" alt="logo superior Alura"></h1>
+    </header>
+    <main >
+        <input type="text" id="codigo" placeholder="Ingrese texto aqui" class="input" cols="70" rows="10" required>
+        <div >
+            <texarea id="respuesta" cols="70" rows="10" ></texarea>
+            <img src="Imagenes/Rectangle 1.png" alt="marco del muñeco" class="rectangle" >
+            <img src="Imagenes/Muñeco.png" alt="imagen esperando conversion" class="muñeco" id="imagen">
+            <div class="frame5" id="mensaje">
+                <h3 id="txt1">Ningún mensaje fue encontrado.</h3>
+                <h4 id="txt2">Ingresa el texto que desees encriptar o desencriptar.</h4> 
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="advertencia">
+            <img src="Imagenes/icono.png" alt="icono de advertencia" class="icono">
+            <h2>Solo letras minusculas y sin acentos</h2>
+        </div>
+        <div class="botones">
+            <button type="button" id="encriptar" class="boton1"> Encriptar </button>
+            <button type="button" id="desencriptar" class="boton2"> Desencriptar </button>
+            
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+<script src="script.js"></script>
