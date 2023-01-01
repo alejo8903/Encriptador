@@ -1,17 +1,30 @@
 document.getElementById("respuesta").innerHTML="";
 
+const boton3 = document.querySelector("#copiar");
+boton3.addEventListener("click",function(evento) {
+    var respuesta= document.getElementById("respuesta").innerHTML;
+    navigator.clipboard.writeText(respuesta)
+    document.getElementById("respuesta").innerHTML=" ";
+    
+   
+        
+
+})
+
 const boton = document.querySelector("#encriptar");
 boton.addEventListener("click",function(evento) {
     var respuesta= String(document.getElementById("respuesta").value);
     var codigo = document.getElementById("codigo").value;
     if (String(codigo)=="") {
-        alert("debe ingresar texto para encriptar")
+        alert("debe ingresar texto para desencriptar")
 
     }else{
         var codigo2=String(codigo);
         encriptar(codigo2);
         document.getElementById("imagen").style.visibility="hidden";
-        document.getElementById("mensaje").style.visibility="hidden"; 
+        document.getElementById("mensaje").style.visibility="hidden";
+        document.getElementById("copiar").style.visibility="visible";
+
     }
    
         
@@ -29,7 +42,8 @@ boton1.addEventListener("click",function(evento) {
         var codigo3=String(codigo);
         desencriptar(codigo3);
         document.getElementById("imagen").style.visibility="hidden";
-        document.getElementById("mensaje").style.visibility="hidden"; 
+        document.getElementById("mensaje").style.visibility="hidden";
+        document.getElementById("copiar").style.visibility="visible";
     }
    
         

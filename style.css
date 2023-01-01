@@ -89,11 +89,12 @@ header h1{
     font-size: 24px;
     line-height: 120%;
     opacity: 40%;
+    
 }
 .rectangle{
     /* Rectangle 1 */
 
-
+    
     position: absolute;
     width: 400px;
     height: 819px;
@@ -168,6 +169,58 @@ div h4{
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+}
+
+.boton3{
+    
+    display: flex ;
+    /* Button */
+    box-sizing: border-box;
+    /* Auto layout */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 1100px;
+    top: 750px;
+
+    /* Light gray */
+
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    
+    z-index:  1;
+    flex-grow: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+    order: 0;
+      
+}
+.boton3:hover{
+    scale: 1.1;
+}
+.boton3:active{
+    border: 3px green;
 }
 
 
@@ -252,6 +305,10 @@ div h2{
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    
 
 
 }
@@ -294,6 +351,9 @@ div h2{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
 
     /* Dark blue/dark-blue-300 */
 
