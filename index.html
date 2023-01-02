@@ -22,21 +22,21 @@
         <h1><img src="Imagenes/Vector.png" alt="logo superior Alura"></h1>
     </header>
     <main >
-        <input type="text" id="codigo" placeholder="Ingrese texto aqui" class="input" cols="70" rows="10" required>
-        <div >
-            <texarea id="respuesta" cols="70" rows="5" ></texarea>
-            <img src="Imagenes/Rectangle 1.png" alt="marco del muñeco" class="rectangle" >
-            <img src="Imagenes/Muñeco.png" alt="imagen esperando conversion" class="muñeco" id="imagen">
-            <div class="frame5" id="mensaje">
-                <h3 id="txt1">Ningún mensaje fue encontrado.</h3>
-                <h4 id="txt2">Ingresa el texto que desees encriptar o desencriptar.</h4> 
-                
-            </div>
+        <textarea type="text" id="codigo" placeholder="Ingrese texto aqui" class="input" cols="70" rows="10" required></textarea>
+        
+        <texarea id="respuesta" class="frame5"></texarea>
+        <img src="Imagenes/Muñeco.png" alt="imagen esperando conversion" class="muñeco" id="imagen">
+        <div class="frame6" id="mensaje">
+            <h3 class="txt1">Ningún mensaje fue encontrado.</h3>
+            <h4 class="txt2">Ingresa el texto que desees encriptar o desencriptar.</h4>
+
         </div>
+        
+            
+        
+    
         <button  type="button" id="copiar" class="boton3" style="visibility: hidden;" > Copiar </button>
-    </main>
-    <footer>
-        <div class="advertencia">
+        <div class="advertencia" id="advert">
             <img src="Imagenes/icono.png" alt="icono de advertencia" class="icono">
             <h2>Solo letras minusculas y sin acentos</h2>
         </div>
@@ -46,7 +46,8 @@
             
             
         </div>
-    </footer>
+    </main>
+    
 
 
 </body>

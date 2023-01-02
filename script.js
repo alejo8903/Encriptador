@@ -4,7 +4,7 @@ const boton3 = document.querySelector("#copiar");
 boton3.addEventListener("click",function(evento) {
     var respuesta= document.getElementById("respuesta").innerHTML;
     navigator.clipboard.writeText(respuesta)
-    document.getElementById("respuesta").innerHTML=" ";
+    
     
    
         
